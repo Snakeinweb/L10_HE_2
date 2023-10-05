@@ -1,0 +1,19 @@
+
+my_dict = {}
+
+print("Введите начальные и конченые пределы данных")
+print(" ")
+
+x = int(input("Начальное значение: "))
+y = int(input("Конечное значение: "))
+
+if x < y:
+    for a in range(x, y + 1):
+        my_dict[a] = a ** a
+elif x > y:
+    n = -1
+    for a in range(x, y - 1, n):
+        my_dict[a] = a ** a
+        
+print(my_dict)
+
